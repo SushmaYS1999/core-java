@@ -1,41 +1,20 @@
-class ECommerce{
-	
-		static int brandId;
-		static String brandName;
-		static String dressType;
-		static String dressColor;
-		
-		static void setBrandId(int id )
-		{
-			brandId = id;
-		}
-		static int getBrandId()
-		{
-			return brandId;
-		}
-		static void setBrandName(String name)
-		{
-			brandName = name;
-		}
-		static String getBrandName()
-		{
-			return brandName;
-		}
-		static void setDressType(String type)
-		{
-			dressType = type;
-		}
-		static String getDressType()
-		{
-			return dressType;
-		}
-		static void setDressColor(String color)
-		{
-			dressColor = color;
-		}
-		static String getDressColor()
-		{
-			return dressColor;
-		}
+package com.xworkz;
 
+public class Ecommerce {
+	String Ajio;
+	String Myntra;
+	String Flipcart;
+	void aji()
+	{
+		System.out.println("Costly for dresses");
+	}
+	void mynt()
+	{
+		System.out.println( " Best product but costly");
+	}
+	void flip()
+	{
+		System.out.println( " Relaible for cuatomers");
+	}
+	
 }

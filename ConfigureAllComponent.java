@@ -1,14 +1,12 @@
-package com.xworkz.areaconfig;
+package com.xworkz.configuration;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan("com.xworkzz")
-@ComponentScan("com.xworkz.things")
+@ComponentScan("com.xworkz")
 
-public class AreaConfig {
-	
-	
+public class ConfigureAllComponent {
 
+	
 }

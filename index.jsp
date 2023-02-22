@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,17 +14,11 @@
 	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 	crossorigin="anonymous"></script>
-
-
 </head>
 <body>
-	<form action="share1" method="post">
-
-
+<form>
 		<nav class="navbar navbar-expand-lg navbar-light bg-dark">
 			<div class="container-fluid">
-
-
 				<nav class="navbar navbar-light bg-light">
 					<div class="container">
 						<a class="navbar-brand" href="#"> <img
@@ -32,17 +26,17 @@
 							alt="" width="88" height="48">
 						</a>
 					</div>
+					
 				</nav>
-				</div>
-				<div class="max-auto" style="width:200px";>
-				<a href="FoodItem.jsp">FoodItem</a>
-				<a href="Interview.jsp">Interview Page</a>
-			</div>
-		</nav>
+				<div>
+				<a href="details.jsp">details page</a><br>
+				
 
-<h1>This is Home Page</h1>
+			</div>
+
+		</nav>
+		
 
 	</form>
-
 </body>
 </html>

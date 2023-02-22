@@ -5,9 +5,9 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @ComponentScan("com.xworkz")
-public class Configuration1 {
-public Configuration1() {
-	System.out.println("created spring..."+this.getClass().getSimpleName());
-}
+public class BakeryConfig {
 
+	public BakeryConfig() {
+	System.out.println("created..");
+	}
 }

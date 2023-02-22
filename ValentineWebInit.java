@@ -1,16 +1,10 @@
 package com.xworkz.config;
 
-import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-public class EggInit extends AbstractAnnotationConfigDispatcherServletInitializer implements WebMvcConfigurer{
-	
-	public EggInit() {
-		System.out.println("created" +this.getClass().getSimpleName());
-		
-	}
+public class ValentineWebInit extends AbstractAnnotationConfigDispatcherServletInitializer implements WebMvcConfigurer {
 
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
@@ -21,7 +15,7 @@ public class EggInit extends AbstractAnnotationConfigDispatcherServletInitialize
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
 		System.out.println("running getServletConfigClasses ");
-		return new Class[] {EggConfiguration.class};
+		return new Class[] {ValentineConfig.class};
 	}
 
 	@Override
@@ -36,3 +30,4 @@ public class EggInit extends AbstractAnnotationConfigDispatcherServletInitialize
 	}
 
 }
+

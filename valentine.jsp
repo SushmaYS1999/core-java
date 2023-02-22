@@ -1,10 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>X-workz</title>
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -36,30 +39,35 @@
 				</div>
 			</div>
 		</nav>
-		<div>
+		
 
-			<h1>save details of Hotel</h1>
-		</div>
-		<form action="egg" method="post">
+			<h1>welcome to details of valentines</h1>
+			
+		<c:forEach items="${error}" var="e">
+		<h6 style="color:red;">${e.message}</h6>
+		</c:forEach>
+		
+		<form action="valentine" method="post">
 		
 		<pre>
+		name<input type="text" name="name" value="${dto.name}">
+		valentineName<input type="text" name="valentineName" value="${dto.valentineName} ">
+		places<select name="places">
+		<option value=""></option>
+		<c:forEach items="${places}" var="p">
+		<option value="${p}">${p}</option>
+		</c:forEach>
+		</select>
 		
-		Dname<input type="text" name="dname">
-		Price<input type="text" name="price">
-		Type<input type="text" name="type">
-		Take yes<input type="radio" name="take" value="yes">
-			No<input type="radio" name="take" value="No">
-		Area<input type="text" name="area">
-		Region<input type="text" name="region">
-		Servers<input type="text" name="servers">
-		Owner<input type="text" name="owner">
-		Hname<input type="text" name="hname" />
-		Noofpartners<input type="text" name="noofpartners">
-		Dishes<input type="text" name="dishes">
+		gifts<select name="gifts">
+		<option value=""></option>
+		<c:forEach items="${gifts}" var="g">
+		<option value="${g}">${g}</option>
+		</c:forEach>
+		</select>
 		
-		<input type="submit" class="btn btn-dark" value="Send" >
+		<input type="submit" class="btn btn-dark" value="save" >
 		</pre>
 		</form>
 </body>
 </html>
-		

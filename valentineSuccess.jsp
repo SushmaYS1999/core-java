@@ -17,27 +17,9 @@
 </head>
 </head>
 <body>
-<form>
-		<nav class="navbar navbar-expand-lg navbar-light bg-dark">
-			<div class="container-fluid">
-				<nav class="navbar navbar-light bg-light">
-					<div class="container">
-						<a class="navbar-brand" href="#"> <img
-							src="https://x-workz.in/static/media/Logo.cf195593dc1b3f921369.png"
-							alt="" width="88" height="48">
-						</a>
-					</div>
-					
-				</nav>
-				<div>
-				<a href="valentine">valentine</a><br>
-				
 
-			</div>
-
-		</nav>
 		
-	<h1>Welcome to valentine </h1>
-	</form>
+	<h1>success </h1>
+	
 </body>
 </html>

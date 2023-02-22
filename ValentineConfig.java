@@ -9,25 +9,24 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @ComponentScan("com.xworkz")
-public class EggConfiguration {
-	
-	public EggConfiguration() {
+public class ValentineConfig {
+
+	public ValentineConfig() {
 		System.out.println("created" +this.getClass().getSimpleName());
 	}
 	
 	@Bean
-	public ViewResolver viewResolver( ) {
-		System.out.println("register viewResolver");
-		return new InternalResourceViewResolver("/", ".jsp");
+	public ViewResolver viewResolver()
+	{
+		System.out.println("running viewResolver");
+		return new InternalResourceViewResolver("/",".jsp");
 		
 	}
 	
 	@Bean
-	public LocalContainerEntityManagerFactoryBean localContainerEntityManagerFactoryBean()
-	{
-		System.out.println("register LocalContainerEntityManagerFactoryBean");
-		LocalContainerEntityManagerFactoryBean bean = new LocalContainerEntityManagerFactoryBean();
-		return bean;
+	public LocalContainerEntityManagerFactoryBean localContainerEntityManagerFactoryBean() {
+		System.out.println("running localContainerEntityManagerFactoryBean");
+		return new LocalContainerEntityManagerFactoryBean();
 	}
-
+	
 }

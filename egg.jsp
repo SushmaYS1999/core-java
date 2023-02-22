@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>X-workz</title>
+<title>Insert title here</title>
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -14,36 +14,52 @@
 	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 	crossorigin="anonymous"></script>
+
 </head>
 <body>
-<form>
+
 		<nav class="navbar navbar-expand-lg navbar-light bg-dark">
 			<div class="container-fluid">
+
+
 				<nav class="navbar navbar-light bg-light">
 					<div class="container">
 						<a class="navbar-brand" href="#"> <img
 							src="https://x-workz.in/static/media/Logo.cf195593dc1b3f921369.png"
 							alt="" width="88" height="48">
 						</a>
+
 					</div>
-					
 				</nav>
 				<div>
-				<a href="details.jsp">details page</a><br>
-				
-
+				<a href="index.jsp">home page</a><br>
+				</div>
 			</div>
-
 		</nav>
-		<h1>Bakery details sucessfully..</h1>
-		<h4>bname : ${bname }<br>
-		<h4>owner : ${owner }<br>
-		<h4>wife : ${wife }<br>
-		<h4>sweet : ${sweet }<br>
-		<h4>since : ${since }<br>
-		
-		</h4>
+		<div>
 
-	</form>
+			<h1>save details of Hotel</h1>
+		</div>
+		<form action="egg" method="post">
+		
+		<pre>
+		
+		Dname<input type="text" name="dname">
+		Price<input type="text" name="price">
+		Type<input type="text" name="type">
+		Take yes<input type="radio" name="take" value="yes">
+			No<input type="radio" name="take" value="No">
+		Area<input type="text" name="area">
+		Region<input type="text" name="region">
+		Servers<input type="text" name="servers">
+		Owner<input type="text" name="owner">
+		Hname<input type="text" name="hname" />
+		Noofpartners<input type="text" name="noofpartners">
+		Dishes<input type="text" name="dishes">
+		
+		<input type="submit" class="btn btn-dark" value="Send" >
+		</pre>
+		</form>
 </body>
 </html>
+		

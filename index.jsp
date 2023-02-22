@@ -4,7 +4,8 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>X-workz</title>
+<title>Insert title here</title>
+
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -29,7 +30,7 @@
 					
 				</nav>
 				<div>
-				<a href="details.jsp">details page</a><br>
+				<a href="egg.jsp">egg page</a><br>
 				
 
 			</div>

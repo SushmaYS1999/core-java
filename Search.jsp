@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>X-workz</title>
+<title>Insert title here</title>
 </head>
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -17,6 +17,7 @@
 	crossorigin="anonymous"></script>
 </head>
 <body>
+
 		<nav class="navbar navbar-expand-lg navbar-light bg-dark">
 			<div class="container-fluid">
 				<nav class="navbar navbar-light bg-light">
@@ -28,12 +29,22 @@
 					</div>
 					
 				</nav>
-			
-				<a href="display">Register</a>
-			</div>		
-		</nav>
-		
-		
-	<h1>Welcome to Airport </h1>
-</body>
+				</nav>
+				
+				<h1>Search here..!!</h1>
+				<h3><span style="color: red;">${message}</span></h3>
+				<form action="search" method="get">
+				Search By Id<input type="text" name="id" />
+				<input type="submit" value="search">
+				</form>
+				<div>
+				<h3>search results</h3>
+				
+				Company :${dto.companyName} </br>
+				Name :${dto.pasangerName} </br>
+				Cost :${dto.cost} </br>
+				type :${dto.type} </br>
+				Country :${dto.country} 
+				</div>	
+	</body>
 </html>

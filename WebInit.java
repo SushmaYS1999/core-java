@@ -4,7 +4,8 @@ import org.springframework.web.servlet.config.annotation.DefaultServletHandlerCo
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-public class ValentineWebInit extends AbstractAnnotationConfigDispatcherServletInitializer implements WebMvcConfigurer {
+
+public class WebInit extends AbstractAnnotationConfigDispatcherServletInitializer implements WebMvcConfigurer{
 
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
@@ -15,7 +16,7 @@ public class ValentineWebInit extends AbstractAnnotationConfigDispatcherServletI
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
 		System.out.println("running getServletConfigClasses ");
-		return new Class[] {ValentineConfig.class};
+		return new Class[] {AeroConfig.class};
 	}
 
 	@Override
@@ -28,6 +29,4 @@ public class ValentineWebInit extends AbstractAnnotationConfigDispatcherServletI
 	public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
 		configurer.enable();
 	}
-
 }
-

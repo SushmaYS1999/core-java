@@ -9,9 +9,8 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @ComponentScan("com.xworkz")
-public class ValentineConfig {
-
-	public ValentineConfig() {
+public class AeroConfig {
+	public AeroConfig() {
 		System.out.println("created" +this.getClass().getSimpleName());
 	}
 	
@@ -24,9 +23,11 @@ public class ValentineConfig {
 	}
 	
 	@Bean
-	public LocalContainerEntityManagerFactoryBean localContainerEntityManagerFactoryBean() {
+	public LocalContainerEntityManagerFactoryBean localContainerEntityManagerFactoryBean()
+	{
 		System.out.println("running localContainerEntityManagerFactoryBean");
 		return new LocalContainerEntityManagerFactoryBean();
+		
 	}
-	
+
 }
